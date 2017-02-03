@@ -1,0 +1,62 @@
+<div class="container">
+
+  <div class="col-md-12">
+    <div class="page-header">
+      <h1>
+        Find Github Repos
+      </h1>
+    </div>
+  </div>
+  <div>
+    <div>
+      <form role="form" class="author-form">
+        <div class="form-group">
+          <input placeholder="Github username" type="text" class="form-control mr5" id="authorname" ng-model="main.data.username"/>
+        </div>
+
+        <button class="btn btn-success" ng-click="main.repoListUserProfileDisplay()">
+          Find Repos
+        </button>
+
+        <!--<button type="submit" className="btn btn-success" onClick={this.getRepos}>-->
+        <!--Find Repos!!-->
+        <!--</button>-->
+      </form>
+    </div>
+  </div>
+
+  <div class="results" ng-show="main.result != null">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="'row">
+          <div class="col-md-3">
+            <img src={{main.result.userProfile.avatar_url+"&s=200"}}>
+          </div>
+          <div class="col-md-9">
+            <p>{{main.result.userProfile.name}}</p>
+            <p>{{main.result.userProfile.company}}</p>
+            <p>{{main.result.userProfile.location}}</p>
+            <p>{{main.result.userProfile.email}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h4> Repositories:</h4>
+    </div>
+    <div class="panel panel-info" ng-repeat="repo in main.result.repoList">
+      <div class="panel-heading">
+        {{repo.name}}
+        <a href= {{repo.html_url}} target="_blank">
+          <span class="pr glyphicon glyphicon-new-window"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="results" ng-show="main.error">
+    {{main.error}}
+  </div>
+</div>
+
+
