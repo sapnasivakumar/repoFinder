@@ -21,7 +21,6 @@
         .then(function(results) {
           toastr.info("Fetched userProfile successfully");
           vm.result.userProfile = results;
-          console.log("results userProfile th econtroller######",results);
         }, function(response){
           vm.userProfileError = true;
           vm.userProfileErrorMessage = response.status + "=" +response.data.message;
@@ -32,7 +31,6 @@
         .then(function (results) {
           toastr.info("Fetched repo list successfully");
           vm.result.repoList = results;
-          console.log("results inside th econtroller######",results);
         }, function(response){
           vm.reposListError = true;
           vm.repoListErrorMessage = response.status + "=" +response.data.message;
