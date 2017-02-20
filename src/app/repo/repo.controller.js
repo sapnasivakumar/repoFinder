@@ -6,7 +6,7 @@
     .controller('RepoController', RepoController);
 
   /** @ngInject */
-  function RepoController($timeout, toastr, repoFinderService) {
+  function RepoController(toastr, repoFinderService) {
     var vm = this;
     vm.data = {};
     vm.repoListUserProfileDisplay = function () {

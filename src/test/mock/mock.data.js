@@ -446,3 +446,35 @@ var sample_error = {
   "documentation_url": "https://developer.github.com/v3"
 };
 
+var sample_profile = {
+  "login": "sapna",
+  "id": 528317,
+  "avatar_url": "https://avatars.githubusercontent.com/u/528317?v=3",
+  "gravatar_id": "",
+  "url": "https://api.github.com/users/pradeepmurugesan",
+  "html_url": "https://github.com/pradeepmurugesan",
+  "followers_url": "https://api.github.com/users/pradeepmurugesan/followers",
+  "following_url": "https://api.github.com/users/pradeepmurugesan/following{/other_user}",
+  "gists_url": "https://api.github.com/users/pradeepmurugesan/gists{/gist_id}",
+  "starred_url": "https://api.github.com/users/pradeepmurugesan/starred{/owner}{/repo}",
+  "subscriptions_url": "https://api.github.com/users/pradeepmurugesan/subscriptions",
+  "organizations_url": "https://api.github.com/users/pradeepmurugesan/orgs",
+  "repos_url": "https://api.github.com/users/pradeepmurugesan/repos",
+  "events_url": "https://api.github.com/users/pradeepmurugesan/events{/privacy}",
+  "received_events_url": "https://api.github.com/users/pradeepmurugesan/received_events",
+  "type": "User",
+  "site_admin": false,
+  "name": "Pradeep Murugesan",
+  "company": "Immobilien Scout 24",
+  "blog": null,
+  "location": "Berlin, Germany",
+  "email": "peeps35@gmail.com",
+  "hireable": null,
+  "bio": null,
+  "public_repos": 19,
+  "public_gists": 5,
+  "followers": 4,
+  "following": 0,
+  "created_at": "2010-12-18T09:38:19Z",
+  "updated_at": "2016-12-23T08:50:29Z"
+};
